@@ -79,7 +79,7 @@ export default function Polychromatic() {
                             <td>{e.time}</td>
                             <td>{e.coords.lat}</td>
                             <td>{e.coords.lon}</td>
-                            <td><Image loading='lazy' className={styles.image} src={e.image} alt={i} width={200} height={200} /></td>
+                            <td><Image className={styles.image} src={e.image} alt={i} width={200} height={200} /></td>
                             <td><button className={styles.viewbttn} onClick={() => {
                                 setImage(e.image);
                                 setTime(e.time);
