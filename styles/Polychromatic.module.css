@@ -32,7 +32,7 @@ background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(40,0,85,1) 73%);
 
 .viewbttn:hover {
     background-color: rgb(165, 111, 223);
-    color: whitesmoke;
+    color: white;
 }
 
 .topview {
