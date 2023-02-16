@@ -1,6 +1,7 @@
 import axios from "axios"
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import styles from "@/styles/Polychromatic.module.css"
 
 export default function Polychromatic() {
 
@@ -55,14 +56,16 @@ export default function Polychromatic() {
     }, [])
 
     return (
-        <div>
+        <div className={styles.bg}>
             <h1>Polychromatic</h1>
-            <Image src={image} alt={image} width={200} height={200} />
-            <div>{time}</div>
-            <div>{coords[0]}, {coords[1]}</div>
-            <table>
+            <div className={styles.topview} >
+                <Image className={styles.image} src={image} alt={image} width={200} height={200} />
+                <div>{time}</div>
+                <div>{coords[0]}, {coords[1]}</div>
+            </div>
+            <table className={styles.cardcont}>
                 <thead>
-                    <tr>
+                    <tr className={styles.tr}>
                         <th>Time</th>
                         <th>Latitude</th>
                         <th>Longitude</th>
@@ -70,21 +73,21 @@ export default function Polychromatic() {
                         <th></th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody className={styles.tbody} >
                     {images.map((e, i) => (
                         <tr key={i}>
                             <td>{e.time}</td>
                             <td>{e.coords.lat}</td>
                             <td>{e.coords.lon}</td>
-                            <td><Image src={e.image} alt={i} width={200} height={200} /></td>
-                            <td><button onClick={() => {
+                            <td><Image className={styles.image} src={e.image} alt={i} width={200} height={200} /></td>
+                            <td><button className={styles.viewbttn} onClick={() => {
                                 setImage(e.image);
                                 setTime(e.time);
                                 setCoords([e.coords.lat, e.coords.lon]);
                                 console.log(images[i].image);
                                 document.body.scrollIntoView({ behavior: 'smooth' });
                             }}>View</button></td>
-                        </tr>
+                        </tr >
                     ))}
                 </tbody>
             </table>
