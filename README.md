@@ -9,7 +9,7 @@ A website that leverages the NASA Open API, specifically the EPIC and TechTransf
 
 Installation: <br>
 `` npm install axios `` <br>
-``npm install --save styled-components or yarn add styled-components``
+``npm install --save styled-components`` or ``yarn add styled-components``
 
-To run:
-``npm run dev or yarn dev `` 
+To run: <br>
+``npm run dev`` or ``yarn dev `` 
