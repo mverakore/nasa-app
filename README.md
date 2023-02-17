@@ -5,6 +5,11 @@ A website that leverages the NASA Open API, specifically the EPIC and TechTransf
 ⭑Nasa Open Api <br>
 ⭑Next.js 13
 
-## Installation of Packages command lines/How to run your application
+## Installation of Packages command lines/How to run application
 
-``npm run dev or yarn dev ``
+Installation: <br>
+`` npm install axios `` <br>
+``npm install --save styled-components or yarn add styled-components``
+
+To run:
+``npm run dev or yarn dev `` 
