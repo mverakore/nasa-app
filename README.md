@@ -6,3 +6,5 @@ A website that leverages the NASA Open API, specifically the EPIC and TechTransf
 ⭑Next.js 13
 
 ## Installation of Packages command lines/How to run your application
+
+``npm run dev or yarn dev ``
